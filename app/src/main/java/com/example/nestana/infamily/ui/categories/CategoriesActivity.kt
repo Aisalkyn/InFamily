@@ -1,5 +1,6 @@
 package com.example.nestana.infamily.ui.categories
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -7,6 +8,7 @@ import com.example.nestana.infamily.MainActivity
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.categories.adapter.CategoryAdapter
 import com.example.nestana.infamily.model.Category
+import com.example.nestana.infamily.ui.articles.ArticlesActivity
 import com.example.nestana.infamily.utils.ApplicationClass
 import kotlinx.android.synthetic.main.activity_categories.*
 import org.jetbrains.anko.toast
@@ -14,9 +16,13 @@ import org.jetbrains.anko.toast
 class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, CategoryAdapter.OnItemClickListener {
     var mAdapter: CategoryAdapter? = null
     var mSectionId: Int? = null
-
+    companion object {
+        val CATEGORY_ID: String = "category_id"
+    }
     override fun onItemClick(category: Category) {
-
+        val myIntent = Intent(this, ArticlesActivity::class.java)
+        myIntent.putExtra(CATEGORY_ID, category.id)
+        startActivity(myIntent)
     }
 
     var mCategoryList: List<Category>? = null
