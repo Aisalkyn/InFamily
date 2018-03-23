@@ -22,7 +22,7 @@ class ArticleAdapter(var mArticleList: List<Article>,
 
 
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        holder!!.bindGood(mArticleList[position], mListener!!)
+        holder!!.bindGood(mArticleList[position], mListener)
     }
 
     fun setList(list: List<Article>) {

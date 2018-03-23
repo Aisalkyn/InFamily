@@ -1,4 +1,4 @@
-package com.example.nestana.infamily.categories.adapter
+package com.example.nestana.infamily.ui.categories.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,10 +7,6 @@ import android.view.ViewGroup
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.model.Category
 import kotlinx.android.synthetic.main.item_category.view.*
-
-/**
- * Created by admin on 24.03.2018.
- */
 
 class CategoryAdapter(var mCategoryList: List<Category>,
                       val mListener: OnItemClickListener) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>(){
@@ -22,7 +18,7 @@ class CategoryAdapter(var mCategoryList: List<Category>,
 
 
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        holder!!.bindGood(mCategoryList[position], mListener!!)
+        holder!!.bindGood(mCategoryList[position], mListener)
     }
 
     fun setList(list: List<Category>) {

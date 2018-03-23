@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import com.example.nestana.infamily.MainActivity
 import com.example.nestana.infamily.R
-import com.example.nestana.infamily.categories.adapter.CategoryAdapter
+import com.example.nestana.infamily.ui.categories.adapter.CategoryAdapter
 import com.example.nestana.infamily.model.Category
 import com.example.nestana.infamily.ui.articles.ArticlesActivity
 import com.example.nestana.infamily.utils.ApplicationClass
