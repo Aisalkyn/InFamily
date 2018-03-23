@@ -1,9 +1,8 @@
-package com.example.nestana.infamily
+package com.example.nestana.infamily.ui
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.nestana.infamily.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        children.setOnClickListener {
+            //intent = Intent(this, ChildActivity.class::java)
+        }
 
 
     }
