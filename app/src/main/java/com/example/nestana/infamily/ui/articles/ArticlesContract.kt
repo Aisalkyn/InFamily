@@ -11,6 +11,6 @@ interface ArticlesContract{
         fun onFail(message: String)
     }
     interface Presenter{
-        fun loadArticles()
+        fun loadArticles(categoryId: Int)
     }
 }
