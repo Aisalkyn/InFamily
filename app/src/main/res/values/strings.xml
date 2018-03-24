@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">InFamily</string>
-    <string name="children">О детях</string>
-    <string name="parents">Для родителей</string>
-    <string name="adopt">Хочу усыновить</string>
+    <string name="children"> У вас есть приемный ребенок?</string>
+    <string name="parents">Вы являетесь приемным родителем/опекуном?</string>
+    <string name="adopt">Хотите стать приемным родителем/опекуном?</string>
     <string name="category_test">Психология</string>
     <string name="link">www.androidhive.info</string>
     <string name="pcychology">Психология</string>
