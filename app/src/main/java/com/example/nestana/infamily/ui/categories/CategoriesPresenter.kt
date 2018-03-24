@@ -7,9 +7,6 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-/**
- * Created by admin on 24.03.2018.
- */
 class CategoriesPresenter(val mService: ApiService, val context: Context, val mView: CategoriesContract.View) : CategoriesContract.Presenter {
 
 
