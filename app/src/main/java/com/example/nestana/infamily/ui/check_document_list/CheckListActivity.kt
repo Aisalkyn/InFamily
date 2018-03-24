@@ -38,8 +38,8 @@ class CheckListActivity : AppCompatActivity(), CheckListContract.View, DocumentA
 
     fun initRecyclerView(){
         mAdapter = DocumentAdapter(ArrayList(), this)
+        rvDocumentList.adapter = mAdapter
         rvDocumentList.layoutManager = LinearLayoutManager(this)
-        rvCategoryList.adapter = mAdapter
     }
 
     override fun onSuccess(documentList: List<Document>?) {

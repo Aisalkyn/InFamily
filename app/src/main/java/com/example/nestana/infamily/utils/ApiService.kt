@@ -17,7 +17,7 @@ interface ApiService {
     @GET("category/{categoryId}/")
     fun getArticlesByCategoryId(@Path("categoryId") categoryId: Int): Call<List<Article>>
 
-    @GET
+    @GET("documents/")
     fun getDocuments(): Call<List<Document>>
 
 
