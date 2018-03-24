@@ -19,15 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.categories.CategoriesActivity"
-            android:label="@string/categories"/>
-        <activity android:name=".ui.articles.ArticlesActivity"
-            android:label="@string/articles"/>
+        <activity
+            android:name=".ui.categories.CategoriesActivity"
+            android:label="@string/categories" />
+        <activity
+            android:name=".ui.articles.ArticlesActivity"
+            android:label="@string/articles" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ui.articles_detailed.ArticleDetailedActivity"
-            android:label="@string/article"/>
-        <activity android:name=".ui.check_document_list.CheckListActivity"
-            android:label="@string/check_list"/>
+        <activity
+            android:name=".ui.articles_detailed.ArticleDetailedActivity"
+            android:label="@string/article" />
+        <activity
+            android:name=".ui.check_document_list.CheckListActivity"
+            android:label="@string/check_list" />
+        <activity android:name=".ui.FutureParentsActivity"></activity>
     </application>
 
 </manifest>

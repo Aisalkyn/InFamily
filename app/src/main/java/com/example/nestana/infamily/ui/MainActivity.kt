@@ -3,6 +3,7 @@ package com.example.nestana.infamily
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.nestana.infamily.ui.FutureParentsActivity
 import com.example.nestana.infamily.ui.categories.CategoriesActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,8 +26,9 @@ class MainActivity : AppCompatActivity(){
             startActivity(intent)
         }
         futureParentsSection.setOnClickListener{
-            intent.putExtra(SECTION_ID,3)
-            startActivity(intent)
+            var myIntent = Intent(this, FutureParentsActivity::class.java)
+//            myIntent.putExtra(SECTION_ID,3)
+            startActivity(myIntent)
         }
     }
 

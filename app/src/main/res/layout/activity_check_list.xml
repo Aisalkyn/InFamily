@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="8dp"
     tools:context="com.example.nestana.infamily.ui.check_document_list.CheckListActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/corner_radius"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:padding="8dp"
-        android:layout_height="wrap_content">
+        android:background="@drawable/corner_radius"
+        android:orientation="vertical"
+        android:padding="8dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/collect_docs"
-            android:textSize="@dimen/text_size_title"/>
+            android:textSize="@dimen/text_size_title" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/client_name"/>
+            android:hint="@string/client_name" />
+
         <EditText
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/client_phone"
-            android:inputType="phone"
-            android:layout_height="wrap_content" />
+            android:inputType="phone" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="@string/client_email"/>
+            android:hint="@string/client_email"
+            android:inputType="textEmailAddress" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:layout_margin="8dp"
         android:id="@+id/rvDocumentList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
         android:background="@color/colorPrimary"
-        android:text="@string/send_files"/>
+        android:text="@string/send_files"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
