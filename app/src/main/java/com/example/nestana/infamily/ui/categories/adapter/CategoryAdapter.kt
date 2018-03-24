@@ -42,7 +42,7 @@ class CategoryAdapter(var mCategoryList: List<Category>,
 
         fun bindGood(category: Category, listener: OnItemClickListener) {
             itemView.tvCategoryTitle.text = category.title
-                bindImage(itemView.ivCategoryImage, category.imageURL)
+            bindImage(itemView.ivCategoryImage, category.imageURL)
             bindImage(itemView.ivCategoryIcon, category.iconURL)
 
             itemView.setOnClickListener {

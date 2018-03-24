@@ -10,10 +10,11 @@ import com.example.nestana.infamily.MainActivity
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.ui.categories.adapter.CategoryAdapter
 import com.example.nestana.infamily.model.Category
-import com.example.nestana.infamily.ui.articles.ArticlesActivity
+import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.utils.ApplicationClass
 import kotlinx.android.synthetic.main.activity_categories.*
 import org.jetbrains.anko.toast
+import java.text.FieldPosition
 
 class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, CategoryAdapter.OnItemClickListener {
     var mAdapter: CategoryAdapter? = null
@@ -22,9 +23,11 @@ class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, Categor
         val CATEGORY_ID: String = "category_id"
     }
     override fun onItemClick(category: Category) {
-        val myIntent = Intent(this, ArticlesActivity::class.java)
+
+        val myIntent = Intent(this, AdoptionInfoActivity::class.java)
         myIntent.putExtra(CATEGORY_ID, category.id)
         startActivity(myIntent)
+
     }
 
     var mCategoryList: List<Category>? = null
@@ -33,6 +36,7 @@ class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, Categor
     override fun onSuccess(categoryList: List<Category>) {
             mCategoryList = categoryList
             mAdapter!!.setList(mCategoryList!!)
+
     }
 
 

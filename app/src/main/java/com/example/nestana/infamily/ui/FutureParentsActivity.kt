@@ -4,7 +4,9 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.nestana.infamily.R
+import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.ui.check_document_list.CheckListActivity
+import com.example.nestana.infamily.ui.quiz.QuizActivity
 import kotlinx.android.synthetic.main.activity_future_parents.*
 
 class FutureParentsActivity : AppCompatActivity() {
@@ -13,7 +15,8 @@ class FutureParentsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_future_parents)
         cvAdoptInfo.setOnClickListener{
-
+            val myIntent = Intent(this, AdoptionInfoActivity::class.java)
+            startActivity(myIntent)
         }
 
         cvFindDocs.setOnClickListener{
@@ -22,7 +25,8 @@ class FutureParentsActivity : AppCompatActivity() {
         }
 
         cvParentTest.setOnClickListener{
-
+            val myIntent = Intent(this, QuizActivity::class.java)
+            startActivity(myIntent)
         }
     }
 
