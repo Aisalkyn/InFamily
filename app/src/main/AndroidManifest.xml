@@ -3,6 +3,11 @@
     package="com.example.nestana.infamily">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.PERMISSION_CAMERA" />
 
     <application
         android:name=".utils.ApplicationClass"
@@ -32,7 +37,8 @@
         <activity
             android:name=".ui.check_document_list.CheckListActivity"
             android:label="@string/check_list" />
-        <activity android:name=".ui.FutureParentsActivity"/>
+        <activity android:name=".ui.FutureParentsActivity" />
+        <activity android:name=".ui.detailed_document.DetailedDocumentActivity"></activity>
     </application>
 
 </manifest>

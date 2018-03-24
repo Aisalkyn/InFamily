@@ -17,5 +17,11 @@
     <string name="categories">Категории</string>
     <string name="articles">Статьи</string>
     <string name="article">Статья</string>
+
+    <string name="request_setting_permissions">You have disabled some permissions, please enable them in settings</string>
+    <string name="pick_photo_from_camera">Камера</string>
+    <string name="pick_photo_from_gallery">Галерея</string>
     <string name="check_list">Собрать документы</string>
+    <string name="use_service">Отправьте документы на проверку</string>
+    <string name="upload_image">Загрузите картинку</string>
 </resources>

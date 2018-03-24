@@ -6,7 +6,7 @@ import android.os.Parcelable
 /**
  * Created by admin on 24.03.2018.
  */
-class   Document() : Parcelable{
+class Document() : Parcelable{
     var title: String? = null
     var description: String? = null
     var schedule: String? = null
