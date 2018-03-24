@@ -5,4 +5,17 @@
     <string name="adopt">Хочу усыновить</string>
     <string name="category_test">Психология</string>
     <string name="link">www.androidhive.info</string>
+    <string name="pcychology">Психология</string>
+    <string name="test_title">Как перестать обижаться? 6 действенных способов</string>
+    <string name="test_content">Порой нам кажется, что мир несправедлив и люди несправедливы по отношению к нам, и вообще вокруг нас царит какая-то вселенская несправедливость. Как перестать обижаться на всех и вся? Иногда кажется, что это невозможно. Но возьмите себе на заметку несколько способов, как справиться с обидами и, может, они вам пригодятся.</string>
+    <string name="test_string_document_title">Справка с места работы</string>
+    <string name="collect_docs">Собери документы на усыновление или опеку</string>
+    <string name="client_name">ФИО</string>
+    <string name="client_phone">Номер</string>
+    <string name="client_email">Почта</string>
+    <string name="send_files">Отправить документы</string>
+    <string name="categories">Категории</string>
+    <string name="articles">Статьи</string>
+    <string name="article">Статья</string>
+    <string name="check_list">Собрать документы</string>
 </resources>

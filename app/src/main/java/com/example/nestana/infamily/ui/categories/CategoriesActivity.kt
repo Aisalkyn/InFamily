@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.view.Menu
+import android.view.MenuItem
 import com.example.nestana.infamily.MainActivity
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.ui.categories.adapter.CategoryAdapter
@@ -46,6 +48,7 @@ class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, Categor
     }
 
     fun init(){
+        initToolbar()
         val app = this.applicationContext as ApplicationClass
         mCategoryPresenter = CategoriesPresenter(app.service!!, this, this)
         mCategoryPresenter!!.loadCategories(mSectionId!!)
@@ -57,5 +60,14 @@ class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, Categor
         rvCategoryList.adapter = mAdapter
         rvCategoryList.layoutManager = LinearLayoutManager(this)
     }
-
+    fun initToolbar(){
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+    }
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        val id =item!!.itemId
+        if (id == android.R.id.home){
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

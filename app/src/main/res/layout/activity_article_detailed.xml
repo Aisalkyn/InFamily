@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.nestana.infamily.ui.articles_detailed.ArticleDetailedActivity">
+    <ImageView
+        android:id="@+id/ivDetailedArticleImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/mind_big"/>
+
+    <TextView
+        tools:text="@string/test_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_title"
+        android:id="@+id/tvDetailedArticleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        tools:text="@string/test_content"
+        android:textSize="@dimen/text_size_content"
+        android:id="@+id/tvDetailedArticleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

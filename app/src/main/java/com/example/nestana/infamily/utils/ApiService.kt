@@ -1,6 +1,7 @@
 package com.example.nestana.infamily.utils
 import com.example.nestana.infamily.model.Article
 import com.example.nestana.infamily.model.Category
+import com.example.nestana.infamily.model.Document
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -16,7 +17,8 @@ interface ApiService {
     @GET("category/{categoryId}/")
     fun getArticlesByCategoryId(@Path("categoryId") categoryId: Int): Call<List<Article>>
 
-
+    @GET
+    fun getDocuments(): Call<List<Document>>
 
 
 }

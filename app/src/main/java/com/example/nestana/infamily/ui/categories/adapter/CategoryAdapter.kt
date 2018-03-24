@@ -4,6 +4,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.model.Category
 import kotlinx.android.synthetic.main.item_category.view.*
@@ -40,10 +42,21 @@ class CategoryAdapter(var mCategoryList: List<Category>,
 
         fun bindGood(category: Category, listener: OnItemClickListener) {
             itemView.tvCategoryTitle.text = category.title
+            bindImage(itemView.ivCategoryImage, category.imageURL)
+            bindImage(itemView.ivCategoryIcon, category.iconURL)
 
             itemView.setOnClickListener {
                 listener.onItemClick(category)
             }
+        }
+
+
+
+        fun bindImage(view: ImageView, uri: String?){
+            Glide.with(itemView.context)
+                    .load(uri)
+                    .centerCrop()
+                    .into(view)
         }
     }
 }
