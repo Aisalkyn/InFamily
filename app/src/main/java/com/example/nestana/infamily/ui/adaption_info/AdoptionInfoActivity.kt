@@ -18,9 +18,9 @@ class AdoptionInfoActivity : AppCompatActivity(){
     }
     private fun init() {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(GuardianshipFragment(), getString(R.string.parents))
-        adapter.addFragment(AdoptFragment(), getString(R.string.children))
-        adapter.addFragment(FosterFragment(), getString(R.string.adopt))
+        adapter.addFragment(GuardianshipFragment(), getString(R.string.guardianship))
+        adapter.addFragment(AdoptFragment(), getString(R.string.adoption))
+        adapter.addFragment(FosterFragment(), getString(R.string.foster))
         tabanim_viewpager.adapter = adapter
         tabanim_tabs.setupWithViewPager(tabanim_viewpager)
 

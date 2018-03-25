@@ -3,4 +3,5 @@
     <dimen name="text_size_title">23sp</dimen>
     <dimen name="margin">5dp</dimen>
     <dimen name="text_size_content">18</dimen>
+    <dimen name="margin8">8dp</dimen>
 </resources>
