@@ -260,5 +260,9 @@
 о приемной (фостерной) семье
 
 (В редакции постановления Правительства КР от 4 августа 2014 года № 439)</string>
+    <string name="quiz_question">Тест: Готовы ли вы стать родителем?</string>
+    <string name="next">Следующий</string>
+    <string name="urnot_ready">Вы еще не готовы</string>
+    <string name="ur_ready">Поздравляем вы прошли тест!</string>
 </resources>
 
