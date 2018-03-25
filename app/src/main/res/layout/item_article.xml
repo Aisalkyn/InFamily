@@ -7,8 +7,11 @@
         android:layout_width="match_parent"
         android:layout_height="100dp" />
     <TextView
+        android:background="#FFF"
         android:id="@+id/tvArticleTitle"
         android:layout_gravity="bottom"
+        android:padding="3dp"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </android.support.v7.widget.CardView>

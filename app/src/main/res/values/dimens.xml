@@ -2,7 +2,7 @@
 <resources>
     <dimen name="text_size_title">20sp</dimen>
     <dimen name="margin">5dp</dimen>
-    <dimen name="text_size_content">18</dimen>
+    <dimen name="text_size_content">18sp</dimen>
     <dimen name="margin8">8dp</dimen>
     <dimen name="margin120">120dp</dimen>
 </resources>
