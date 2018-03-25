@@ -24,4 +24,9 @@
     <string name="check_list">Собрать документы</string>
     <string name="use_service">Отправьте документы на проверку</string>
     <string name="upload_image">Загрузите картинку</string>
+    <string name="quiz">Тест</string>
+    <string name="quiz_question">Тест: Готов ли я к усыновлению?</string>
+    <string name="next">Следующее</string>
+    <string name="urnot_ready">Вам еще нужно подготовиться</string>
+    <string name="ur_ready">Поздравляем, вы готовы стать родителем</string>
 </resources>

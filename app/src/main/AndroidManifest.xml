@@ -40,7 +40,10 @@
         <activity android:name=".ui.FutureParentsActivity" />
         <activity android:name=".ui.detailed_document.DetailedDocumentActivity" />
         <activity android:name=".ui.adaption_info.AdoptionInfoActivity" />
-        <activity android:name=".ui.quiz.QuizActivity"></activity>
+        <activity android:name=".ui.quiz.ResultActivity" />
+        <activity
+            android:name=".ui.quiz.QuizActivity"
+            android:label="@string/quiz" />
     </application>
 
 </manifest>
