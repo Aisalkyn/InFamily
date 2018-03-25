@@ -3,6 +3,7 @@ package com.example.nestana.infamily.ui.quiz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -28,7 +29,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         rb1 = (RadioButton) findViewById(R.id.radio0);
         rb2 = (RadioButton) findViewById(R.id.radio1);
         List<String> list = new ArrayList<>();
@@ -71,5 +72,14 @@ public class QuizActivity extends AppCompatActivity {
     private void setQuestionView() {
         txtQuestion.setText(currentQ);
         qid++;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

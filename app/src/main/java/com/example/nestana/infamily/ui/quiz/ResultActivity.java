@@ -16,6 +16,7 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //get rating bar object
         RatingBar bar = (RatingBar) findViewById(R.id.ratingBar1);
         bar.setNumStars(5);
@@ -61,5 +62,14 @@ public class ResultActivity extends AppCompatActivity {
         }
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }

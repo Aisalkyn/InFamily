@@ -5,6 +5,8 @@ import android.content.Intent
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.model.Document
@@ -16,7 +18,7 @@ class DetailedDocumentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed_document)
-
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         mDocument = intent.getParcelableExtra(CheckListActivity.PARCED_DOCUMENT)
 
         init()
@@ -77,4 +79,12 @@ class DetailedDocumentActivity : AppCompatActivity() {
         simpleAlert.show()
     }
 
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        if (id == android.R.id.home) {
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
