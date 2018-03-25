@@ -100,9 +100,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_marginLeft="8dp"
+
+                        android:textColor="@color/black"
                         android:textSize="@dimen/text_size_title"
-                        android:textStyle="bold"
-                        android:text="@string/children" />
+                        android:text="@string/todo" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -152,8 +153,7 @@
                         android:layout_marginLeft="8dp"
                         android:textColor="@color/black"
                         android:textSize="@dimen/text_size_title"
-                        android:textStyle="bold"
-                        android:text="@string/parents" />
+                        android:text="@string/quiz" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
