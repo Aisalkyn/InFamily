@@ -15,11 +15,11 @@
             android:id="@+id/tabanim_tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/background2"
-            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:textColor="@color/blue"
             app:tabIndicatorColor="@color/colorPrimary"
             app:tabSelectedTextColor="@color/colorPrimary"
-            app:tabTextColor="@color/colorPrimary" />
+            app:tabTextColor="@color/colorPrimary"/>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/tabanim_viewpager"

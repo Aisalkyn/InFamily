@@ -5,27 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="@dimen/margin"
     tools:context="com.example.nestana.infamily.ui.detailed_document.DetailedDocumentActivity">
 
     <TextView
         android:id="@+id/tvTitleDetailedDocument"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/parents"
+        android:textColor="#000"
+        />
     <TextView
         android:id="@+id/tvDescDetailedDocument"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textSize="16sp"
+        />
     <TextView
         android:id="@+id/tvScheduleDetailedDocument"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+
+        android:textSize="18sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="7sp">
     <TextView
         android:id="@+id/tvPhoneDetailedDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone"
+            />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/tvAddressDetailedDocument"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="7sp">
+        <TextView
+            android:id="@+id/tvAddressDetailedDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/i_location"
+
+            />
+    </LinearLayout>
+
 
 </LinearLayout>
