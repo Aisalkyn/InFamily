@@ -56,7 +56,7 @@
 
 
     <Button
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:id="@+id/button1"
         android:textColor="#FFF"
         android:layout_width="match_parent"

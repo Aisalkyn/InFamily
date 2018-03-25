@@ -3,6 +3,7 @@ package com.example.nestana.infamily.ui
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.example.nestana.infamily.R
 import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.ui.check_document_list.CheckListActivity
@@ -28,9 +29,15 @@ class FutureParentsActivity : AppCompatActivity() {
             val myIntent = Intent(this, QuizActivity::class.java)
             startActivity(myIntent)
         }
+
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
-
-
-
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        val id: Int = item!!.itemId
+        if (id == android.R.id.home){
+            onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
