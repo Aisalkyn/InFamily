@@ -5,12 +5,13 @@
     <ImageView
         android:id="@+id/ivArticleImage"
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="160dp" />
     <TextView
         android:background="#FFF"
+        android:textSize="16dp"
+        android:layout_margin="8dp"
         android:id="@+id/tvArticleTitle"
         android:layout_gravity="bottom"
-        android:padding="3dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

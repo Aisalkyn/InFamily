@@ -1,12 +1,12 @@
-package com.example.nestana.infamily.ui.adaption_info
+package com.example.nestana.infamily.ui.adoption_info
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.example.nestana.infamily.R
-import com.example.nestana.infamily.ui.adaption_info.adopt.AdoptFragment
-import com.example.nestana.infamily.ui.adaption_info.foster.FosterFragment
-import com.example.nestana.infamily.ui.adaption_info.guardian.GuardianshipFragment
+import com.example.nestana.infamily.ui.adoption_info.adopt.AdoptFragment
+import com.example.nestana.infamily.ui.adoption_info.foster.FosterFragment
+import com.example.nestana.infamily.ui.adoption_info.guardian.GuardianshipFragment
 import kotlinx.android.synthetic.main.activity_adoption_info.*
 
 

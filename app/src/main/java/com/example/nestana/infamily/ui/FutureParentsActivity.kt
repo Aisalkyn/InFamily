@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.example.nestana.infamily.R
-import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
+import com.example.nestana.infamily.ui.adoption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.ui.check_document_list.CheckListActivity
 import com.example.nestana.infamily.ui.quiz.QuizActivity
 import kotlinx.android.synthetic.main.activity_future_parents.*

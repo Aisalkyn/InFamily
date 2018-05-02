@@ -1,4 +1,4 @@
-package com.example.nestana.infamily.ui.adaption_info.foster
+package com.example.nestana.infamily.ui.adoption_info.foster
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

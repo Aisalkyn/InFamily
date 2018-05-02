@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+
     tools:context="com.example.nestana.infamily.ui.check_document_list.CheckListActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="8dp"
-        android:layout_height="match_parent">
+        android:padding="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +25,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/collect_docs"
                 android:textSize="@dimen/text_size_title" />
 
@@ -47,70 +49,79 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="250dp">
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="Список документов"
                 android:textColor="@color/colorPrimary"
-                android:text="Список документов"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rvDocumentList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp"
+                android:background="@color/white"/>
         </LinearLayout>
-    <LinearLayout
-        android:background="@drawable/corner_radius"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_marginTop="8dp"
-            android:text="@string/use_service"
-            android:textAlignment="center"
-            android:textSize="18dp"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPagerOfImage"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="8dp" />
-
-
-        <com.viewpagerindicator.CirclePageIndicator
-            android:id="@+id/indicator"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:padding="10dip"
-            app:centered="true"
-            app:fillColor="@color/colorAccent"
-            app:pageColor="#767676"
-            app:snap="false" />
+            android:background="@drawable/corner_radius"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/ivAddPhotoDocument"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_photo_camera" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/use_service"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btSendDocument"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/send_files"
-            android:textColor="#FFF" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerOfImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/adobt" />
 
 
-    </LinearLayout>
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="@color/colorAccent"
+                app:pageColor="#767676"
+                app:snap="false" />
+
+            <ImageView
+                android:id="@+id/ivAddPhotoDocument"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_photo_camera" />
+
+            <Button
+                android:id="@+id/btSendDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/send_files"
+                android:textColor="#FFF" />
+
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

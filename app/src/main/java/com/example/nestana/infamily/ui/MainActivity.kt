@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.nestana.infamily.ui.FutureParentsActivity
-import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.ui.categories.CategoriesActivity
 import kotlinx.android.synthetic.main.activity_main.*
 

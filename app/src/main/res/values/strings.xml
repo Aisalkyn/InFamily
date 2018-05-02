@@ -6,14 +6,14 @@
     <string name="category_test">Психология</string>
     <string name="link">www.androidhive.info</string>
     <string name="pcychology">Психология</string>
-    <string name="test_title">Как перестать обижаться? 6 действенных способов</string>
+    <string name="test_title">Как перестать обижаться? Шесть действенных способов</string>
     <string name="test_content">Подростковый период - это период перехода от детства к юности, сопровождающийся агрессивностью, рискованным поведением, конфликтами с окружением и поисками своего «Я».
 
 Многие родители с тревогой ждут наступления этого момента в жизни своих детей. Брать в семью подростка со сформировавшимся характером и не всегда хорошими привычками многие не решаются, боясь не справиться, но есть родители, которые считают, что с подростком легче договориться, что это уже самостоятельный человек, который может стать помощником во всех делах.
 
 Спутать умение дружить с подростком с готовностью стать его родителем, велика. Для того, чтобы понять, сможете ли вы существовать вместе, поможет гостевой режим и Школа приемных родителей, обучение в которой обязательно для усыновителя. Знания и навыки, полученные в такой школе, бесценны.</string>
     <string name="test_string_document_title">Справка с места работы</string>
-    <string name="collect_docs">Собери документы на усыновление или опеку</string>
+    <string name="collect_docs">Собрать документы на усыновление или опеку</string>
     <string name="client_name">ФИО</string>
     <string name="client_phone">Номер</string>
     <string name="client_email">Почта</string>
@@ -26,8 +26,8 @@
     <string name="pick_photo_from_camera">Камера</string>
     <string name="pick_photo_from_gallery">Галерея</string>
     <string name="check_list">Собрать документы</string>
-    <string name="use_service">Отправьте документы на проверку</string>
-    <string name="upload_image">Загрузите картинку</string>
+    <string name="use_service">Прикрепить документы на проверку</string>
+    <string name="upload_image">Загрузить картинку</string>
     <string name="call">Номер</string>
     <string name="open_map">Адрес</string>
     <string name="foster">Фостерное опекунство</string>

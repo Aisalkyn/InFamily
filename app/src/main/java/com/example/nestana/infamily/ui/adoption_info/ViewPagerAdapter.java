@@ -1,4 +1,4 @@
-package com.example.nestana.infamily.ui.adaption_info;
+package com.example.nestana.infamily.ui.adoption_info;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

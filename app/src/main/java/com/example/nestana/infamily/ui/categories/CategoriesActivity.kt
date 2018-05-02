@@ -1,22 +1,18 @@
 package com.example.nestana.infamily.ui.categories
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.view.Menu
 import android.view.MenuItem
 import com.example.nestana.infamily.MainActivity
 import com.example.nestana.infamily.R
-import com.example.nestana.infamily.ui.categories.adapter.CategoryAdapter
 import com.example.nestana.infamily.model.Category
-import com.example.nestana.infamily.ui.adaption_info.AdoptionInfoActivity
 import com.example.nestana.infamily.ui.articles.ArticlesActivity
-import com.example.nestana.infamily.ui.articles_detailed.ArticleDetailedActivity
+import com.example.nestana.infamily.ui.categories.adapter.CategoryAdapter
 import com.example.nestana.infamily.utils.ApplicationClass
 import kotlinx.android.synthetic.main.activity_categories.*
 import org.jetbrains.anko.toast
-import java.text.FieldPosition
 
 class CategoriesActivity : AppCompatActivity(), CategoriesContract.View, CategoryAdapter.OnItemClickListener {
     var mAdapter: CategoryAdapter? = null

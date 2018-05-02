@@ -39,10 +39,11 @@
             android:label="@string/article" />
         <activity
             android:name=".ui.check_document_list.CheckListActivity"
-            android:label="@string/check_list" />
+            android:label="@string/check_list"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".ui.FutureParentsActivity" />
         <activity android:name=".ui.detailed_document.DetailedDocumentActivity" />
-        <activity android:name=".ui.adaption_info.AdoptionInfoActivity" />
+        <activity android:name=".ui.adoption_info.AdoptionInfoActivity" />
         <activity android:name=".ui.quiz.QuizActivity"/>
         <activity android:name=".ui.detailed_document.MapActivity"/>
 
